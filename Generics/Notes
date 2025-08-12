@@ -1,0 +1,17 @@
+1. Generics stop runtime errors ar compile time.
+2. there is a concept of wildcard in generics that is signified using ?, its of three types:
+    * Upper Bound List<? extends cls>
+    * Lower Bound List<? super cls>
+    * UnBound List<?>
+3. List<? extends PersonList> needs to be done if the type is never to be referred like variable in method declarations
+public void name(List<? extends parent> var name)
+4. List<T extends ClassName> needs to be done if the type needs to be referred example
+    static class Personholde<T extends Person>{
+    T get()
+    {
+
+
+
+    }
+    }
+    if here we put ? in the class declaration then we cannot give a return type to the get method.
